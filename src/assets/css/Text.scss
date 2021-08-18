@@ -1,0 +1,271 @@
+@import 'variables';
+
+.roboto-regular {
+    font-family: $roboto-regular !important;
+}
+
+.roboto-medium {
+    font-family: $roboto-regular !important;
+}
+
+.roboto-bold {
+    font-family: $roboto-bold !important;
+}
+
+.roboto-black {
+    font-family: $roboto-black !important;
+}
+
+/* 
+* Heading
+*/
+h1 {
+    font-size: 3em;
+    font-family: $roboto-black;
+    color: $blue;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: $roboto-black;
+    color: $blue;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-family: $roboto-black;
+    word-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
+
+h4 {
+    font-family: $roboto-black;
+}
+
+h5 {
+    font-family: $roboto-black;
+}
+
+/* 
+* Body
+*/
+p {
+    font-family: $roboto-regular !important;
+    line-height: 1.6;
+    font-size: 16;
+}
+
+a:link {
+    color: $blue;
+    text-decoration: none;
+    font-family: $roboto-regular;
+    cursor: pointer;
+}
+
+a:visited {
+    color: $dark-blue;
+}
+
+a:hover {
+    color: $light-blue;
+    text-decoration: underline;
+}
+
+b {
+    font-family: $roboto-black;
+}
+
+i {
+    font-family: $roboto-italic
+}
+
+ul,
+ol,
+li {
+    font-family: $roboto-regular;
+    line-height: 1.6;
+    font-size: 16;
+}
+
+div {
+    font-family: $roboto-regular;
+}
+
+span {
+    font-family: $roboto-regular;
+}
+
+
+/* 
+* Text size 
+*/
+.xs-text {
+    font-size: 8px !important;
+}
+
+.sm-text {
+    font-size: 12px !important;
+}
+
+.ms-text {
+    font-size: 14px !important;
+}
+
+.md-text {
+    font-size: 16px !important;
+}
+
+.lg-text {
+    font-size: 20px !important;
+}
+
+.xl-text {
+    font-size: 24px !important;
+}
+
+/* 
+* Text coloring 
+*/
+.black {
+    color: $black !important;
+}
+.white {
+    color: $white !important;
+}
+
+/* Grey */
+.dark-grey {
+    color: $dark-grey !important;
+}
+.grey {
+    color: $grey !important;
+}
+.light-grey {
+    color: $light-grey !important;
+}
+
+/* Blue */
+.dark-blue {
+    color: $dark-blue !important;
+}
+.blue {
+    color: $blue !important;
+}
+.light-blue {
+    color: $light-blue !important;
+}
+
+/* Green */
+.dark-green {
+    color: $dark-green !important;
+}
+.green {
+    color: $green !important;
+}
+.light-green {
+    color: $light-green !important;
+}
+
+/* Yellow */
+.dark-yellow {
+    color: $dark-yellow !important;
+}
+.yellow {
+    color: $yellow !important;
+}
+.light-yellow {
+    color: $light-yellow !important;
+}
+
+/* Red */
+.dark-red {
+    color: $dark-red !important;
+}
+.red {
+    color: $red !important;
+}
+.light-red {
+    color: $light-red !important;
+}
+
+/* Orange */
+.dark-orange {
+    color: $dark-orange !important;
+}
+.orange {
+    color: $orange !important;
+}
+.light-orange {
+    color: $light-orange !important;
+}
+
+/* Hover color */
+.text-hover:hover {
+    color: $blue  !important;
+    cursor: pointer;
+}
+
+.text-hover-red:hover {
+    color: $red  !important;
+    cursor: pointer;
+}
+
+.text-hover-green:hover {
+    color: $green  !important;
+    cursor: pointer;
+}
+
+.text-hover-dark-green:hover {
+    color: $dark-green  !important;
+    cursor: pointer;
+}
+
+.text-hover-yellow:hover {
+    color: $yellow  !important;
+    cursor: pointer;
+}
+
+/* Misc */
+.center-text {
+    text-align: center !important; 
+}
+
+.anchor {
+    font-size: 0;
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+ }
+
+.thick-font {
+    font-weight: 900;
+}
+
+.semi-thick-font {
+    font-weight: 500;
+}
+
+.lg-icon {
+    font-size: 50px !important;
+    padding: 10px;
+}
+
+.xl-icon {
+    font-size: 75px !important;
+    padding: 10px;
+}

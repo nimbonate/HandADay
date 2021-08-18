@@ -1,0 +1,59 @@
+@import 'variables';
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  font-family: $roboto-regular;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 0 0 5px 0;
+  box-sizing: border-box;
+  border: 1px solid $dark-grey;
+  border-radius: 4px;
+  background-color: $white;
+  resize: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  outline-color: $blue;
+  box-shadow: 0 0 2pt 1pt $blue;
+}
+
+textarea {
+  font-family: $roboto-regular;
+  font-size: 16px;
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid $dark-grey;
+  border-radius: 4px;
+  background-color: white;
+}
+
+// Buttons
+.md-blue-btn {
+  background-color: $blue;
+  font-family: $roboto-bold !important;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px 35px;
+  color: $white;
+  border: $light-grey solid 1px; 
+  cursor: pointer;
+}
+
+.md-blue-btn:hover {
+  background-color: $light-blue;
+}
+
+.md-blue-btn:focus { 
+  border: none;
+}

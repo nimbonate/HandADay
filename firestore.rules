@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // No one can update, delete, read, or list but everyone can create
+    match /messages/{messageId} {
+      allow update, delete, read, list: if false;
+      allow create: if true;
+    }
+
+    // No one can update, delete, read, or list but everyone can create
+    match /users/{userId} {
+      allow create, update, delete, read, list: if true;
+    }
+  }
+}

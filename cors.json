@@ -1,0 +1,7 @@
+[
+    {
+      "origin": ["https://dougs-react-boiler.web.app/", "http://localhost:3000/"],
+      "method": ["GET"],
+      "maxAgeSeconds": 3600
+    }
+  ]

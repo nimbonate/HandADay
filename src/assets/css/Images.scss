@@ -1,0 +1,115 @@
+@import "variables";
+
+/* 
+* Pixel sizing 
+*/
+img.xsmall {
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+    padding: 5px;
+}
+
+img.small {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+
+img.medium {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    padding: 5px;
+}
+
+img.large {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    padding: 5px;
+}
+
+img.xlarge {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    padding: 5px;
+}
+
+img.xxlarge {
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+}
+
+/* 
+* em sizing
+*/
+img.xs-em {
+    height: 0.75em;
+}
+img.sm-em {
+    height: 1em;
+}
+
+img.md-em {
+    height: 1.25em;
+}
+
+img.lg-em {
+    height: 1.75em;
+}
+
+img.xl-em {
+    height: 2em;
+}
+
+// Video containers
+.sm-video-container {
+    width: 30% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.md-video-container {
+    width: 60% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+@media screen and (max-width: 900px) {
+    .sm-video-container {
+        width: 80% !important;
+    }
+
+    .md-video-container {
+        width: 90% !important;
+    }
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* 
+* Misc 
+*/
+.responsive {
+    max-width: 100%;
+    height: auto;
+}

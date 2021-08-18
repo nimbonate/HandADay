@@ -1,0 +1,425 @@
+@import "variables";
+  
+   /* ---------------------------------------------- */
+  /* Alignment CSS contains styles such as margins, */
+ /*  padding, width, containers, and positioning.  */
+/* ---------------------------------------------- */
+
+/* Browser has default 8px around body */
+body {
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+
+/* 
+* Responsive Containers
+*/
+/* Large */
+@media screen and (min-width: 1181px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 75%;
+        padding: 3% 0;
+    }
+
+    .wrapper-w-img {
+        padding: 0 5% 0 7%; 
+      }
+
+    .xl-container {
+        margin: auto;
+        width: 85%;
+        padding: 1%;
+    }
+
+    .lg-container {
+        margin: auto;
+        width: 70%;
+        padding: 1%;
+    }
+
+    .md-container {
+        margin: auto;
+        width: 50%;
+        padding: 1%;
+    }
+
+    .sm-container {
+        margin: auto;
+        width: 25%;
+        padding: 1%;
+    }
+}
+
+/* Medium */
+@media screen and (min-width: 561px) and (max-width: 1180px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 80%;
+        padding: 2% 0;
+    }
+
+    .wrapper-w-img {
+        padding: 0 1%;
+      }
+
+    .xl-container {
+        margin: auto;
+        width: 95%;
+        padding: 1%;
+    }
+
+    .lg-container {
+        margin: auto;
+        width: 90%;
+        padding: 1%;
+    }
+
+    .md-container {
+        margin: auto;
+        width: 80%;
+        padding: 1%;
+    }
+
+    .sm-container {
+        margin: auto;
+        width: 70%;
+        padding: 1%;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 560px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 90%;
+        padding: 2% 0%;
+    }
+
+    .wrapper-w-img {
+        padding: 0 1%;
+      }
+
+
+    .xl-container {
+        margin: auto;
+        width: 95%;
+        padding: 1%;
+    }
+
+    .lg-container {
+        margin: auto;
+        width: 95%;
+        padding: 1%;
+    }
+
+    .md-container {
+        margin: auto;
+        width: 95%;
+        padding: 0.5%;
+    }
+
+    .sm-container {
+        margin: auto;
+        width: 95%;
+        padding: 0.5%;
+    }
+}
+
+
+/* 
+* Responsive Width
+*/
+@media screen and (min-width: 901px) {
+    .sm-width {
+        width: 50% !important;
+    }
+
+    .md-width {
+        width: 75% !important;
+    }
+
+    .lg-width {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sm-width {
+        width: 70% !important;
+    }
+
+    .md-width {
+        width: 80% !important;
+    }
+
+    .lg-width {
+        width: 90% !important;
+    }
+}
+
+
+/*
+* Floating
+*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.right {
+    display: block;
+    float: right;
+}
+
+.left {
+    display: block;
+    float: left;
+}
+
+/* 
+* Positioning
+*/
+.p-container {
+    position: relative;
+}
+
+.p-top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.p-top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.p-bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.p-bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.p-center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.p-bottom-center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.p-center-center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* 
+* Padding
+*/
+.no-padding {
+    padding: 0px !important;
+}
+
+.sm-padding-r {
+    padding: 0 1% 0 0;
+}
+
+.sm-padding-l {
+    padding: 0 0 0 1%;
+}
+
+.sm-padding-r-l {
+    padding: 0 1% 0 1%;
+}
+
+.sm-padding-b-r-l {
+    padding: 0 1% 1% 1%;
+}
+
+
+.lg-padding-r {
+    padding: 0 10% 0 0;
+}
+
+.sm-padding-t {
+    padding: 1% 0 0 0;
+}
+
+.sm-padding-b {
+    padding: 0 0 1% 0;
+}
+
+.md-padding-t {
+    padding: 5% 0 0 0;
+}
+
+.md-padding-b {
+    padding: 0 0 5% 0;
+}
+
+.md-padding-r-l {
+    padding: 0 5% 0 5%;
+}
+
+.md-padding-r {
+    padding: 0 5% 0 0;
+}
+
+.lg-padding-r-l {
+    padding: 0 10% 0 10%;
+}
+
+.sm-padding {
+    padding: 1%;
+}
+
+.sm-padding-t-b {
+    padding: 1% 0 1% 0;
+}
+
+.md-padding {
+    padding: 5%;
+}
+
+.lg-padding {
+    padding: 10%;
+}
+
+.lg-padding-b {
+    padding: 0 0 10% 0;
+}
+
+
+/* 
+*  Margin
+*/
+.no-margin {
+    margin: 0px !important;
+}
+
+.xs-margin-t {
+    margin: 0.5% 0% 0% 0%;
+}
+
+.xs-margin-t-b {
+    margin: 0.5% 0% 0.5% 0%;
+}
+
+.sm-margin {
+    margin: 1%;
+}
+
+.sm-margin-t {
+    margin: 1% 0% 0% 0%;
+}
+
+.sm-margin-r-l {
+    margin: 0 1% 0 1%;
+}
+
+.sm-margin-r {
+    margin: 0 1% 0 0;
+}
+
+.sm-margin-l {
+    margin: 0 0 0 1%;
+}
+
+.sm-margin-b { 
+    margin: 0 0 1% 0;
+}
+
+.sm-margin-t-b {
+    margin: 1% 0% 1% 0%;
+}
+
+.md-margin {
+    margin: 5%;
+}
+
+.md-margin-t {
+    margin: 5% 0 0 0;
+}
+
+.md-margin-b {
+    margin: 0 0 5% 0;
+}
+
+.md-margin-t-b {
+    margin: 5% 0% 5% 0%;
+}
+
+.lg-margin {
+    margin: 10%;
+}
+
+.lg-margin-b {
+    margin: 0 0 10% 0;
+}
+
+.lg-margin-r {
+    margin: 0 15% 0% 0% !important;
+}
+
+.margin-auto {
+    margin: auto !important;
+}
+
+/*
+* Misc 
+*/
+.horiz-center {
+    margin: 0 auto;
+}
+
+.box-text-v-align {
+    display: flex;
+    align-items:center;
+ }
+
+ .f-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 900px) {
+    .f-container {
+        display: block;
+        text-align: center;
+    }
+  }
+
+
+
+ 
+  
